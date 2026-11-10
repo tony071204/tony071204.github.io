@@ -5,109 +5,159 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tony Dam | Analytics Engineer</title>
 <meta name="description" content="Tony Dam - Analytics Engineer. Data pipelines, transformation layers and self-serve dashboards.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
 <style>
-  :root {
-    --bg: #ffffff; --fg: #1f2328; --muted: #57606a; --line: #d0d7de;
-    --card: #f6f8fa; --accent: #2c3a52; --link: #0969da;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #8b949e; --line: #30363d;
-            --card: #161b22; --accent: #c8d0de; --link: #58a6ff; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg);
-         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  a { color: var(--link); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  main { max-width: 860px; margin: 0 auto; padding: 48px 16px 64px; }
-  header { text-align: center; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
-  h1 { font-size: 2.4rem; margin: 0 0 4px; }
-  .tag { color: var(--muted); font-style: italic; margin: 0 0 16px; }
-  .links a { display: inline-block; margin: 4px; padding: 6px 14px; border: 1px solid var(--line);
-             border-radius: 999px; color: var(--fg); background: var(--card); }
-  .links a:hover { border-color: var(--link); text-decoration: none; }
-  section { margin-top: 40px; }
-  h2 { font-size: 1.3rem; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
-  blockquote { margin: 0; padding: 12px 16px; border-left: 4px solid var(--accent);
-               background: var(--card); border-radius: 4px; }
-  .job { display: grid; grid-template-columns: 170px 1fr; gap: 4px 16px;
-         padding: 12px 0; border-bottom: 1px solid var(--line); }
-  .job .when { color: var(--muted); }
-  .job .desc { color: var(--muted); font-size: .92rem; }
-  @media (max-width: 600px) { .job { grid-template-columns: 1fr; } }
-  .stack { display: grid; grid-template-columns: 220px 1fr; gap: 8px 16px; }
-  .chips span { display: inline-block; margin: 2px 4px 2px 0; padding: 2px 10px; border-radius: 6px;
-                background: var(--card); border: 1px solid var(--line); font-size: .88rem; }
-  @media (max-width: 600px) { .stack { grid-template-columns: 1fr; } }
-  .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
-  .project { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 8px;
-             background: var(--card); color: var(--fg); }
-  .project:hover { border-color: var(--link); text-decoration: none; }
-  .project small { color: var(--muted); display: block; margin-top: 4px; }
-  footer { margin-top: 48px; text-align: center; color: var(--muted); font-size: .85rem; }
+  body { margin: 0; background: #ffffff; }
+  @media (prefers-color-scheme: dark) { body { background: #0d1117; } }
+  .markdown-body { box-sizing: border-box; max-width: 980px; margin: 0 auto; padding: 45px; }
+  @media (max-width: 767px) { .markdown-body { padding: 15px; } }
 </style>
 </head>
 <body>
-<main>
-  <header>
-    <h1>Tony Dam</h1>
-    <p class="tag">Progressing, persistence and late nights ★</p>
-    <div class="links">
-      <a href="https://github.com/tony071204">GitHub</a>
-      <a href="https://www.linkedin.com/in/tonydam0712/">LinkedIn</a>
-      <a href="https://leetcode.com/u/Trungdd0712/">LeetCode</a>
-      <a href="mailto:tonydam.work@gmail.com">Email</a>
-    </div>
-  </header>
-
-  <section>
-    <h2>About me</h2>
-    <blockquote>"Every number I ship is a promise. If one breaks at 1am, I'm already awake."</blockquote>
-    <p>Analytics Engineer building data pipelines, transformation layers and self-serve dashboards.</p>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-    <div class="job"><div class="when">Mar 2026 – Now</div>
-      <div><a href="https://matthewsliquor.com.au"><b>Matthews Liquor Group</b></a> - Analytics Engineer
-      <div class="desc">Top 5 independent liquor retail group in Victoria</div></div></div>
-    <div class="job"><div class="when">Mar 2026 – Now</div>
-      <div><a href="https://www.i4s.au/"><b>Intelligence4Start</b></a> - Analytics Engineer
-      <div class="desc">Multicultural marketing agency</div></div></div>
-    <div class="job"><div class="when">Nov 2025 – Feb 2026</div>
-      <div><a href="https://twinglobal.com.au/"><b>TWIN Global</b></a> - Business Analyst Intern
-      <div class="desc">Healthcare and real estate software company</div></div></div>
-    <div class="job"><div class="when">Feb 2025 – Oct 2025</div>
-      <div><a href="https://www.filmviet.au/"><b>Film Viet Australia</b></a> - Data Analyst Intern
-      <div class="desc">Leading film distributor across Australia and New Zealand</div></div></div>
-    <div class="job"><div class="when">Nov 2024 – Feb 2025</div>
-      <div><b>Vin BigData (VinGroup)</b> - Machine Learning Intern
-      <div class="desc">Leading Applied AI and Big Data technology company in Vietnam</div></div></div>
-  </section>
-
-  <section>
-    <h2>Tech stack</h2>
-    <div class="stack">
-      <b>Warehouses &amp; Databases</b><div class="chips"><span>Snowflake</span><span>BigQuery</span><span>DuckDB</span><span>PostgreSQL</span><span>Supabase</span></div>
-      <b>Transformation &amp; Ingestion</b><div class="chips"><span>dbt</span><span>SQL</span><span>Python</span><span>Playwright</span><span>Selenium</span></div>
-      <b>Visualisation</b><div class="chips"><span>Plotly Dash</span><span>Vega-Lite</span><span>Power BI</span><span>Tableau</span><span>Excel</span></div>
-      <b>Modelling</b><div class="chips"><span>scikit-learn</span><span>XGBoost</span><span>ARIMA</span><span>PyTorch</span></div>
-      <b>DevOps &amp; Cloud</b><div class="chips"><span>Git</span><span>GitHub Actions</span><span>DigitalOcean</span></div>
-      <b>AI Tooling</b><div class="chips"><span>Claude Code</span></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="projects">
-      <a class="project" href="https://github.com/tony071204/Skytrax-local-warehouse"><b>Skytrax-local-warehouse</b><small>Local data warehouse</small></a>
-      <a class="project" href="https://github.com/tony071204/Customer-Churn-Analysis"><b>Customer-Churn-Analysis</b><small>Churn analysis</small></a>
-      <a class="project" href="https://github.com/tony071204/Woolworth-Customer-Understanding-and-Product-analysis"><b>Woolworth Customer &amp; Product Analysis</b><small>Customer understanding</small></a>
-      <a class="project" href="https://github.com/tony071204/Bank-Loan-Analysis"><b>Bank-Loan-Analysis</b><small>Loan analysis</small></a>
-    </div>
-  </section>
-
-  <footer>&copy; Tony Dam</footer>
-</main>
+<article class="markdown-body">
+<p align="center" dir="auto">
+<themed-picture data-catalyst-inline="true"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/fe22f48966bd1435677333ff05a7a932764bd97af33d3ef5f2ce3b1745f2f3f3/68747470733a2f2f726561646d652d747970696e672d7376672e64656d6f6c61622e636f6d3f666f6e743d496e636f6e736f6c617461267765696768743d3630302673697a653d3436266475726174696f6e3d333030302670617573653d3130303026636f6c6f723d4646464646462663656e7465723d74727565267643656e7465723d74727565267265706561743d66616c73652677696474683d31323030266865696768743d3930266c696e65733d50726f6772657373696e672532432b70657273697374656e63652b616e642b6c6174652b6e69676874732b254532253938253835" data-canonical-src="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=600&amp;size=46&amp;duration=3000&amp;pause=1000&amp;color=FFFFFF&amp;center=true&amp;vCenter=true&amp;repeat=false&amp;width=1200&amp;height=90&amp;lines=Progressing%2C+persistence+and+late+nights+%E2%98%85">
+  <source media="(prefers-color-scheme: light)" srcset="https://camo.githubusercontent.com/34351351e40133dad614a1a50a89e405bfe32f2f2e184eecddd1a5b2f5086de6/68747470733a2f2f726561646d652d747970696e672d7376672e64656d6f6c61622e636f6d3f666f6e743d496e636f6e736f6c617461267765696768743d3630302673697a653d3436266475726174696f6e3d333030302670617573653d3130303026636f6c6f723d3030303030302663656e7465723d74727565267643656e7465723d74727565267265706561743d66616c73652677696474683d31323030266865696768743d3930266c696e65733d50726f6772657373696e672532432b70657273697374656e63652b616e642b6c6174652b6e69676874732b254532253938253835" data-canonical-src="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=600&amp;size=46&amp;duration=3000&amp;pause=1000&amp;color=000000&amp;center=true&amp;vCenter=true&amp;repeat=false&amp;width=1200&amp;height=90&amp;lines=Progressing%2C+persistence+and+late+nights+%E2%98%85">
+  <img src="https://camo.githubusercontent.com/34351351e40133dad614a1a50a89e405bfe32f2f2e184eecddd1a5b2f5086de6/68747470733a2f2f726561646d652d747970696e672d7376672e64656d6f6c61622e636f6d3f666f6e743d496e636f6e736f6c617461267765696768743d3630302673697a653d3436266475726174696f6e3d333030302670617573653d3130303026636f6c6f723d3030303030302663656e7465723d74727565267643656e7465723d74727565267265706561743d66616c73652677696474683d31323030266865696768743d3930266c696e65733d50726f6772657373696e672532432b70657273697374656e63652b616e642b6c6174652b6e69676874732b254532253938253835" alt="Progressing, persistence and late nights ★" data-canonical-src="https://readme-typing-svg.demolab.com?font=Inconsolata&amp;weight=600&amp;size=46&amp;duration=3000&amp;pause=1000&amp;color=000000&amp;center=true&amp;vCenter=true&amp;repeat=false&amp;width=1200&amp;height=90&amp;lines=Progressing%2C+persistence+and+late+nights+%E2%98%85">
+</picture></themed-picture>
+</p>
+<p align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/95f5d52ed56a646e23bce6397b0d5dc8f376cb0cad5426794a7c4a9c4a9d1c24/68747470733a2f2f696d616765732e73746f636b63616b652e636f6d2f7075626c69632f642f322f352f64323539303334342d383037382d346564382d386639322d6534303937663162363665665f6c617267652f6c6174652d6e696768742d776f726b2d73746f636b63616b652e6a7067"><img src="https://camo.githubusercontent.com/95f5d52ed56a646e23bce6397b0d5dc8f376cb0cad5426794a7c4a9c4a9d1c24/68747470733a2f2f696d616765732e73746f636b63616b652e636f6d2f7075626c69632f642f322f352f64323539303334342d383037382d346564382d386639322d6534303937663162363665665f6c617267652f6c6174652d6e696768742d776f726b2d73746f636b63616b652e6a7067" width="100%" alt="A person working late at a desk by a warm lamp" data-canonical-src="https://images.stockcake.com/public/d/2/5/d2590344-8078-4ed8-8f92-e4097f1b66ef_large/late-night-work-stockcake.jpg" style="max-width: 100%;"></a>
+</p>
+<h2 dir="auto">🧠 About Me</h2>
+<blockquote align="center">
+  <b><i>"Every number I ship is a promise. If one breaks at 1am, I'm already awake."</i></b>
+</blockquote>
+<p align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/09e863448b02e09b8218db53b26a033616c9641b23a4958fed8daf18aeb3061d/68747470733a2f2f737562737461636b63646e2e636f6d2f696d6167652f66657463682f24735f2177416d6d212c665f6175746f2c715f6175746f3a676f6f642c666c5f70726f67726573736976653a73746565702f6874747073253341253246253246737562737461636b2d706f73742d6d656469612e73332e616d617a6f6e6177732e636f6d2532467075626c6963253246696d6167657325324630313663363262362d393337382d343066342d396630382d3866306239623961613536315f3230303078313432382e706e67"><img src="https://camo.githubusercontent.com/09e863448b02e09b8218db53b26a033616c9641b23a4958fed8daf18aeb3061d/68747470733a2f2f737562737461636b63646e2e636f6d2f696d6167652f66657463682f24735f2177416d6d212c665f6175746f2c715f6175746f3a676f6f642c666c5f70726f67726573736976653a73746565702f6874747073253341253246253246737562737461636b2d706f73742d6d656469612e73332e616d617a6f6e6177732e636f6d2532467075626c6963253246696d6167657325324630313663363262362d393337382d343066342d396630382d3866306239623961613536315f3230303078313432382e706e67" width="80%" alt="Data modelling, Python, Git, SQL, OLAP and orchestration" data-canonical-src="https://substackcdn.com/image/fetch/$s_!wAmm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F016c62b6-9378-40f4-9f08-8f0b9b9aa561_2000x1428.png" style="max-width: 100%;"></a>
+  <br>
+    <sub>Image credit: <a href="https://vutr.substack.com/p/6-technical-skills-every-data-engineer?utm_source=publication-search" rel="nofollow">vutr</a></sub>
+</p>
+<p align="center" dir="auto">
+  <a href="https://www.linkedin.com/in/tonydam0712/" rel="nofollow">
+    <img src="https://camo.githubusercontent.com/759d9a39879229dcfc312600bbcad4ad9123a46ac0f1ebff0083f77817006c84/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c696e6b6564496e2d50726f66696c652d3243334135323f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d433844304445" alt="LinkedIn" data-canonical-src="https://img.shields.io/badge/LinkedIn-Profile-2C3A52?style=for-the-badge&amp;logo=linkedin&amp;logoColor=C8D0DE" style="max-width: 100%;">
+  </a>
+  <a href="https://leetcode.com/u/Trungdd0712/" rel="nofollow">
+    <img src="https://camo.githubusercontent.com/877a0b616722c076f0ca757f790099117a3e0cc379df81b9bbd9d53926151d74/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c656574436f64652d50726f66696c652d3336343435433f7374796c653d666f722d7468652d6261646765266c6f676f3d6c656574636f6465266c6f676f436f6c6f723d433844304445" alt="LeetCode" data-canonical-src="https://img.shields.io/badge/LeetCode-Profile-36445C?style=for-the-badge&amp;logo=leetcode&amp;logoColor=C8D0DE" style="max-width: 100%;">
+  </a>
+  <a href="mailto:tonydam.work@gmail.com">
+    <img src="https://camo.githubusercontent.com/db46f28e15b94a2e0e4d716f7fb036208397ec08ec5ccb5a9f86b3df732437a2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f456d61696c2d436f6e746163742d3345344336363f7374796c653d666f722d7468652d6261646765266c6f676f3d676d61696c266c6f676f436f6c6f723d433844304445" alt="Email" data-canonical-src="https://img.shields.io/badge/Email-Contact-3E4C66?style=for-the-badge&amp;logo=gmail&amp;logoColor=C8D0DE" style="max-width: 100%;">
+  </a>
+</p>
+<div align="center" dir="auto">
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3b6891a6192a0785414d75b219494aa2e6f7f995b8acab56722764f9f58d2b12/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4275696c64696e672d44617461253230506970656c696e65732d344133443536"><img src="https://camo.githubusercontent.com/3b6891a6192a0785414d75b219494aa2e6f7f995b8acab56722764f9f58d2b12/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4275696c64696e672d44617461253230506970656c696e65732d344133443536" alt="Building" data-canonical-src="https://img.shields.io/badge/Building-Data%20Pipelines-4A3D56" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9c649761677b9e32a2f8d1d77df184498b910f896882e6989d98d5951bb92fe0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6f64656c6c696e672d5472616e73666f726d6174696f6e2532304c61796572732d324333413532"><img src="https://camo.githubusercontent.com/9c649761677b9e32a2f8d1d77df184498b910f896882e6989d98d5951bb92fe0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6f64656c6c696e672d5472616e73666f726d6174696f6e2532304c61796572732d324333413532" alt="Modelling" data-canonical-src="https://img.shields.io/badge/Modelling-Transformation%20Layers-2C3A52" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/401d762f1469f3b3cd25fd0a30f2e0340212467c62b5600e0c8e70e3b1e720dc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5368697070696e672d53656c662d2d736572766525323044617368626f617264732d333634343543"><img src="https://camo.githubusercontent.com/401d762f1469f3b3cd25fd0a30f2e0340212467c62b5600e0c8e70e3b1e720dc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5368697070696e672d53656c662d2d736572766525323044617368626f617264732d333634343543" alt="Shipping" data-canonical-src="https://img.shields.io/badge/Shipping-Self--serve%20Dashboards-36445C" style="max-width: 100%;"></a></p>
+</div>
+<hr>
+<h2 dir="auto">💼 Experience</h2>
+<markdown-accessiblity-table><table cellpadding="8" role="table">
+  <tbody><tr><td colspan="4"><b>Now</b></td></tr>
+  <tr>
+    <td width="170">Mar 2026 –</td>
+    <td width="230"><a href="https://matthewsliquor.com.au" rel="nofollow"><b>Matthews Liquor Group</b></a></td> 
+    <td>Analytics Engineer</td>
+    <td>Top 5 independent liquor retail group in Victoria</td>
+  </tr>
+  <tr>
+    <td>Mar 2026 –</td>
+    <td><a href="https://www.i4s.au/" rel="nofollow"><b>Intelligence4Start</b></a></td> 
+    <td>Analytics Engineer</td>
+    <td>Multicultural marketing agency</td>
+  </tr>
+  <tr><td colspan="4"><b>Before</b></td></tr>
+  <tr>
+    <td>Nov 2025 – Feb 2026</td>
+    <td><a href="https://twinglobal.com.au/" rel="nofollow"><b>TWIN Global</b></a></td> 
+    <td>Business Analyst Intern</td>
+    <td>Healthcare and real estate software company</td>
+  </tr>
+  <tr>
+    <td>Feb 2025 – Oct 2025</td>
+    <td><a href="https://www.filmviet.au/" rel="nofollow"><b>Film Viet Australia</b></a></td> 
+    <td>Data Analyst Intern</td>
+    <td>Leading film distributor across Australia and New Zealand</td>
+  </tr>
+  <tr>
+    <td>Nov 2024 – Feb 2025</td>
+    <td><a href="https://www.linkedin.com/company/vin-big-data/?fbclid=IwAR1xJdpMuHaP95YaxafWw40L1Re-5VAYYp9BfEq5gXwfjmOGpnZ-ECBdHMg" rel="nofollow"><b>Vin BigData (VinGroup)</b></a></td> 
+    <td>Machine Learning Intern</td>
+    <td>Leading Applied AI and Big Data technology company in VietNam</td>
+  </tr>
+</tbody></table></markdown-accessiblity-table>
+<hr>
+<h2 dir="auto">🛠️ Techstack &amp; Ecosystem</h2>
+<markdown-accessiblity-table><table role="table">
+  <tbody><tr>
+    <td width="26%"><b>🏢 Warehouses &amp; Databases</b></td>
+    <td>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/43c15af0858c898eaa34881b795cff3ea2d8587ad7646c9a7ff2c509967ec035/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536e6f77666c616b652d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d736e6f77666c616b65266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/43c15af0858c898eaa34881b795cff3ea2d8587ad7646c9a7ff2c509967ec035/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536e6f77666c616b652d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d736e6f77666c616b65266c6f676f436f6c6f723d433844304445" alt="Snowflake" data-canonical-src="https://img.shields.io/badge/Snowflake-4A3D56?style=flat-square&amp;logo=snowflake&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f718e8c229f21d35f6a0cf7ef697335f09487110db9e1a04e3592e81700ef0a7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f42696751756572792d3336343435433f7374796c653d666c61742d737175617265266c6f676f3d676f6f676c652d6269677175657279266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/f718e8c229f21d35f6a0cf7ef697335f09487110db9e1a04e3592e81700ef0a7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f42696751756572792d3336343435433f7374796c653d666c61742d737175617265266c6f676f3d676f6f676c652d6269677175657279266c6f676f436f6c6f723d433844304445" alt="BigQuery" data-canonical-src="https://img.shields.io/badge/BigQuery-36445C?style=flat-square&amp;logo=google-bigquery&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/760f4363feb48db12f730cffa3752ecb6003dfb9ec98d59a1423caebd190c263/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4475636b44422d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d6475636b6462266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/760f4363feb48db12f730cffa3752ecb6003dfb9ec98d59a1423caebd190c263/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4475636b44422d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d6475636b6462266c6f676f436f6c6f723d433844304445" alt="DuckDB" data-canonical-src="https://img.shields.io/badge/DuckDB-2C3A52?style=flat-square&amp;logo=duckdb&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/88a0f5e351f630fabbf4f210e27d63b8a0e5ad4af8d4882463f9ba1d1a6b58ff/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506f737467726553514c2d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d706f737467726573716c266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/88a0f5e351f630fabbf4f210e27d63b8a0e5ad4af8d4882463f9ba1d1a6b58ff/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506f737467726553514c2d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d706f737467726573716c266c6f676f436f6c6f723d433844304445" alt="PostgreSQL" data-canonical-src="https://img.shields.io/badge/PostgreSQL-3E4C66?style=flat-square&amp;logo=postgresql&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/e1d220099b209aad94cad942bf5800945bd2129f7c50a2fb191e6629a720b12f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53757061626173652d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d7375706162617365266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/e1d220099b209aad94cad942bf5800945bd2129f7c50a2fb191e6629a720b12f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53757061626173652d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d7375706162617365266c6f676f436f6c6f723d433844304445" alt="Supabase" data-canonical-src="https://img.shields.io/badge/Supabase-4A3D56?style=flat-square&amp;logo=supabase&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>🔄 Transformation &amp; Ingestion</b></td>
+    <td>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/94be966ba3d992ec48b58a44a5f7f3832976fe0f0f91805d99212c47a6f447d7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6462742d3336343435433f7374796c653d666c61742d737175617265266c6f676f3d646274266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/94be966ba3d992ec48b58a44a5f7f3832976fe0f0f91805d99212c47a6f447d7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6462742d3336343435433f7374796c653d666c61742d737175617265266c6f676f3d646274266c6f676f436f6c6f723d433844304445" alt="dbt" data-canonical-src="https://img.shields.io/badge/dbt-36445C?style=flat-square&amp;logo=dbt&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/91b14267ff184b768b1099af640db06e948fc0bd9193f8345d0f2531c819fc6b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53514c2d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d706f737467726573716c266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/91b14267ff184b768b1099af640db06e948fc0bd9193f8345d0f2531c819fc6b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53514c2d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d706f737467726573716c266c6f676f436f6c6f723d433844304445" alt="SQL" data-canonical-src="https://img.shields.io/badge/SQL-2C3A52?style=flat-square&amp;logo=postgresql&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0c39980c28282d6cda0e37ca04e96b93c4022729477a94b2c6d447d36e42cfc1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d707974686f6e266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/0c39980c28282d6cda0e37ca04e96b93c4022729477a94b2c6d447d36e42cfc1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d707974686f6e266c6f676f436f6c6f723d433844304445" alt="Python" data-canonical-src="https://img.shields.io/badge/Python-3E4C66?style=flat-square&amp;logo=python&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c53fd41f742388a2a55c5f7989f5a079f04e377f256b03f27516ea6e1d7a67ae/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506c61797772696768742d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d706c6179777269676874266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/c53fd41f742388a2a55c5f7989f5a079f04e377f256b03f27516ea6e1d7a67ae/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506c61797772696768742d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d706c6179777269676874266c6f676f436f6c6f723d433844304445" alt="Playwright" data-canonical-src="https://img.shields.io/badge/Playwright-4A3D56?style=flat-square&amp;logo=playwright&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/54588a029064f57a8cf7e34ccd198fa3e83e54a2816da98cc8007994753c90e4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53656c656e69756d2d3336343435433f7374796c653d666c61742d737175617265266c6f676f3d73656c656e69756d266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/54588a029064f57a8cf7e34ccd198fa3e83e54a2816da98cc8007994753c90e4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53656c656e69756d2d3336343435433f7374796c653d666c61742d737175617265266c6f676f3d73656c656e69756d266c6f676f436f6c6f723d433844304445" alt="Selenium" data-canonical-src="https://img.shields.io/badge/Selenium-36445C?style=flat-square&amp;logo=selenium&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>📊 Visualisation</b></td>
+    <td>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/32f527484de4f49b3ad7ff36f13efc40025b95a303303fff5b5198828b46c8eb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506c6f746c795f446173682d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d706c6f746c79266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/32f527484de4f49b3ad7ff36f13efc40025b95a303303fff5b5198828b46c8eb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506c6f746c795f446173682d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d706c6f746c79266c6f676f436f6c6f723d433844304445" alt="Plotly Dash" data-canonical-src="https://img.shields.io/badge/Plotly_Dash-2C3A52?style=flat-square&amp;logo=plotly&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9a73fb3ebc19475b67d4c3cff45166d0685a1b49dcdf829564eb122cec4c9b99/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f566567612d2d4c6974652d3336343435433f7374796c653d666c61742d737175617265"><img src="https://camo.githubusercontent.com/9a73fb3ebc19475b67d4c3cff45166d0685a1b49dcdf829564eb122cec4c9b99/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f566567612d2d4c6974652d3336343435433f7374796c653d666c61742d737175617265" alt="Vega-Lite" data-canonical-src="https://img.shields.io/badge/Vega--Lite-36445C?style=flat-square" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/461b545ae027338c6c8b3a49cc2c59804e220c1545152af79f88dd85d44c02c9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506f7765725f42492d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d706f7765726269266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/461b545ae027338c6c8b3a49cc2c59804e220c1545152af79f88dd85d44c02c9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506f7765725f42492d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d706f7765726269266c6f676f436f6c6f723d433844304445" alt="Power BI" data-canonical-src="https://img.shields.io/badge/Power_BI-3E4C66?style=flat-square&amp;logo=powerbi&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a77bb7bab3a1bea2a2750faab01c1412d404d43af61b10e661dd196155751f3e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5461626c6561752d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d7461626c656175266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/a77bb7bab3a1bea2a2750faab01c1412d404d43af61b10e661dd196155751f3e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5461626c6561752d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d7461626c656175266c6f676f436f6c6f723d433844304445" alt="Tableau" data-canonical-src="https://img.shields.io/badge/Tableau-4A3D56?style=flat-square&amp;logo=tableau&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/bae9044cdd3a8eeccba007f6ad85ef459d1165ce0792f829983ff3730f181ddb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f457863656c2d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d6d6963726f736f6674657863656c266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/bae9044cdd3a8eeccba007f6ad85ef459d1165ce0792f829983ff3730f181ddb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f457863656c2d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d6d6963726f736f6674657863656c266c6f676f436f6c6f723d433844304445" alt="Excel" data-canonical-src="https://img.shields.io/badge/Excel-2C3A52?style=flat-square&amp;logo=microsoftexcel&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>📈 Modelling</b></td>
+    <td>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f7bbac10492fb63dd28b27007a70cc1f2fafaee6f0938673579fde16b54859fe/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7363696b69742d2d6c6561726e2d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d7363696b69746c6561726e266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/f7bbac10492fb63dd28b27007a70cc1f2fafaee6f0938673579fde16b54859fe/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7363696b69742d2d6c6561726e2d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d7363696b69746c6561726e266c6f676f436f6c6f723d433844304445" alt="scikit-learn" data-canonical-src="https://img.shields.io/badge/scikit--learn-4A3D56?style=flat-square&amp;logo=scikitlearn&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8caa3030db739f2298364a35bd7f4bb3e6813faade19873419c2766df2e233b2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5847426f6f73742d3243334135323f7374796c653d666c61742d737175617265"><img src="https://camo.githubusercontent.com/8caa3030db739f2298364a35bd7f4bb3e6813faade19873419c2766df2e233b2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5847426f6f73742d3243334135323f7374796c653d666c61742d737175617265" alt="XGBoost" data-canonical-src="https://img.shields.io/badge/XGBoost-2C3A52?style=flat-square" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ce398244be5d839266d890bf4e70b7762acee8477f796488bdaebe62542f7e09/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4152494d412d3336343435433f7374796c653d666c61742d737175617265"><img src="https://camo.githubusercontent.com/ce398244be5d839266d890bf4e70b7762acee8477f796488bdaebe62542f7e09/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4152494d412d3336343435433f7374796c653d666c61742d737175617265" alt="ARIMA" data-canonical-src="https://img.shields.io/badge/ARIMA-36445C?style=flat-square" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1847c5bffc073f3b59c65bd2d6465cc777d7d6ea84dc84b41573d83fff27ed8d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5079546f7263682d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d7079746f726368266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/1847c5bffc073f3b59c65bd2d6465cc777d7d6ea84dc84b41573d83fff27ed8d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5079546f7263682d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d7079746f726368266c6f676f436f6c6f723d433844304445" alt="PyTorch" data-canonical-src="https://img.shields.io/badge/PyTorch-3E4C66?style=flat-square&amp;logo=pytorch&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>🚀 DevOps &amp; Cloud</b></td>
+    <td>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a832a5988596773dd899e503fce060de1eb5e9fc805e99e06a509d17aec9742b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769742d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d676974266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/a832a5988596773dd899e503fce060de1eb5e9fc805e99e06a509d17aec9742b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769742d3441334435363f7374796c653d666c61742d737175617265266c6f676f3d676974266c6f676f436f6c6f723d433844304445" alt="Git" data-canonical-src="https://img.shields.io/badge/Git-4A3D56?style=flat-square&amp;logo=git&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/16c616fa77fe3ca1fe2c22d6591e2686bf422c1b6537772fdecc639cf2b9c67b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875625f416374696f6e732d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d6769746875622d616374696f6e73266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/16c616fa77fe3ca1fe2c22d6591e2686bf422c1b6537772fdecc639cf2b9c67b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875625f416374696f6e732d3243334135323f7374796c653d666c61742d737175617265266c6f676f3d6769746875622d616374696f6e73266c6f676f436f6c6f723d433844304445" alt="GitHub Actions" data-canonical-src="https://img.shields.io/badge/GitHub_Actions-2C3A52?style=flat-square&amp;logo=github-actions&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/737fbfcec62c43fd868ed030e3821e74a107dadb3d7180b66d00448716dc2f8a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4469676974616c4f6365616e2d3336343435433f7374796c653d666c61742d737175617265266c6f676f3d6469676974616c6f6365616e266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/737fbfcec62c43fd868ed030e3821e74a107dadb3d7180b66d00448716dc2f8a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4469676974616c4f6365616e2d3336343435433f7374796c653d666c61742d737175617265266c6f676f3d6469676974616c6f6365616e266c6f676f436f6c6f723d433844304445" alt="DigitalOcean" data-canonical-src="https://img.shields.io/badge/DigitalOcean-36445C?style=flat-square&amp;logo=digitalocean&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>🤖 AI Tooling</b></td>
+    <td>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0bc4e7fd18638c28bde3d3e96a941117db472b7a5b1c55bd86b5738e4c5edc03/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436c617564655f436f64652d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d616e7468726f706963266c6f676f436f6c6f723d433844304445"><img src="https://camo.githubusercontent.com/0bc4e7fd18638c28bde3d3e96a941117db472b7a5b1c55bd86b5738e4c5edc03/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436c617564655f436f64652d3345344336363f7374796c653d666c61742d737175617265266c6f676f3d616e7468726f706963266c6f676f436f6c6f723d433844304445" alt="Claude Code" data-canonical-src="https://img.shields.io/badge/Claude_Code-3E4C66?style=flat-square&amp;logo=anthropic&amp;logoColor=C8D0DE" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+</tbody></table></markdown-accessiblity-table>
+<h2 dir="auto">📊 Stats</h2>
+<p align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/e0a6ee66b4b06ccd5a654f61baa6f97add5d17330db038bc216eeb63265bf73b/68747470733a2f2f676863686172742e72736861682e6f72672f3265613434662f746f6e79303731323034"><img src="https://camo.githubusercontent.com/e0a6ee66b4b06ccd5a654f61baa6f97add5d17330db038bc216eeb63265bf73b/68747470733a2f2f676863686172742e72736861682e6f72672f3265613434662f746f6e79303731323034" width="90%" alt="GitHub contribution graph" data-canonical-src="https://ghchart.rshah.org/2ea44f/tony071204" style="max-width: 100%;"></a>
+</p>
+<h2 dir="auto">📌 Pinned</h2>
+<markdown-accessiblity-table><table align="center" role="table">
+  <tbody><tr>
+    <td><a href="https://github.com/tony071204/Skytrax-local-warehouse"><themed-picture data-catalyst-inline="true"><picture><source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/04c0b56ddd965e638a8c25532962120eb73dc352dd6a16c60b463f9a674a6d1c/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d746f6e79303731323034267265706f3d536b79747261782d6c6f63616c2d77617265686f757365267468656d653d6461726b2662675f636f6c6f723d306431313137267469746c655f636f6c6f723d35386136666626746578745f636f6c6f723d3862393439652669636f6e5f636f6c6f723d38623934396526626f726465725f636f6c6f723d333033363364" data-canonical-src="https://github-readme-stats-fast.vercel.app/api/pin/?username=tony071204&amp;repo=Skytrax-local-warehouse&amp;theme=dark&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=8b949e&amp;icon_color=8b949e&amp;border_color=30363d"><img src="https://camo.githubusercontent.com/6f4b728594af0c5d215c5fc4b8d9162c787aca2173b1dd26a82fa02c389dddc4/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d746f6e79303731323034267265706f3d536b79747261782d6c6f63616c2d77617265686f757365267468656d653d64656661756c742662675f636f6c6f723d666666666666267469746c655f636f6c6f723d30393639646126746578745f636f6c6f723d3537363036612669636f6e5f636f6c6f723d35373630366126626f726465725f636f6c6f723d643064376465" width="400" alt="Skytrax-local-warehouse" data-canonical-src="https://github-readme-stats-fast.vercel.app/api/pin/?username=tony071204&amp;repo=Skytrax-local-warehouse&amp;theme=default&amp;bg_color=ffffff&amp;title_color=0969da&amp;text_color=57606a&amp;icon_color=57606a&amp;border_color=d0d7de"></picture></themed-picture></a></td>
+    <td><a href="https://github.com/tony071204/Customer-Churn-Analysis"><themed-picture data-catalyst-inline="true"><picture><source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/d4b39e1b46c7a942d5812f8cd7b8c9b66c8c88c39523b51aad20e38db446cf48/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d746f6e79303731323034267265706f3d437573746f6d65722d436875726e2d416e616c79736973267468656d653d6461726b2662675f636f6c6f723d306431313137267469746c655f636f6c6f723d35386136666626746578745f636f6c6f723d3862393439652669636f6e5f636f6c6f723d38623934396526626f726465725f636f6c6f723d333033363364" data-canonical-src="https://github-readme-stats-fast.vercel.app/api/pin/?username=tony071204&amp;repo=Customer-Churn-Analysis&amp;theme=dark&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=8b949e&amp;icon_color=8b949e&amp;border_color=30363d"><img src="https://camo.githubusercontent.com/29641c7f5fdd498a2731e63bbdab863f54081e1fa741fc74d3e587d5a1d7bbbe/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d746f6e79303731323034267265706f3d437573746f6d65722d436875726e2d416e616c79736973267468656d653d64656661756c742662675f636f6c6f723d666666666666267469746c655f636f6c6f723d30393639646126746578745f636f6c6f723d3537363036612669636f6e5f636f6c6f723d35373630366126626f726465725f636f6c6f723d643064376465" width="400" alt="Customer-Churn-Analysis" data-canonical-src="https://github-readme-stats-fast.vercel.app/api/pin/?username=tony071204&amp;repo=Customer-Churn-Analysis&amp;theme=default&amp;bg_color=ffffff&amp;title_color=0969da&amp;text_color=57606a&amp;icon_color=57606a&amp;border_color=d0d7de"></picture></themed-picture></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/tony071204/Woolworth-Customer-Understanding-and-Product-analysis"><themed-picture data-catalyst-inline="true"><picture><source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/6cd83fe70afa1862bd58467f95c5736c2d4ff165e622a091dc2af45e6f30b9ab/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d746f6e79303731323034267265706f3d576f6f6c776f7274682d437573746f6d65722d556e6465727374616e64696e672d616e642d50726f647563742d616e616c79736973267468656d653d6461726b2662675f636f6c6f723d306431313137267469746c655f636f6c6f723d35386136666626746578745f636f6c6f723d3862393439652669636f6e5f636f6c6f723d38623934396526626f726465725f636f6c6f723d333033363364" data-canonical-src="https://github-readme-stats-fast.vercel.app/api/pin/?username=tony071204&amp;repo=Woolworth-Customer-Understanding-and-Product-analysis&amp;theme=dark&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=8b949e&amp;icon_color=8b949e&amp;border_color=30363d"><img src="https://camo.githubusercontent.com/082f3abea9fcdf90d7eada6a6862498f1bae1a61f6721d7037bee79583fa34dc/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d746f6e79303731323034267265706f3d576f6f6c776f7274682d437573746f6d65722d556e6465727374616e64696e672d616e642d50726f647563742d616e616c79736973267468656d653d64656661756c742662675f636f6c6f723d666666666666267469746c655f636f6c6f723d30393639646126746578745f636f6c6f723d3537363036612669636f6e5f636f6c6f723d35373630366126626f726465725f636f6c6f723d643064376465" width="400" alt="Woolworth-Customer-Understanding-and-Product-analysis" data-canonical-src="https://github-readme-stats-fast.vercel.app/api/pin/?username=tony071204&amp;repo=Woolworth-Customer-Understanding-and-Product-analysis&amp;theme=default&amp;bg_color=ffffff&amp;title_color=0969da&amp;text_color=57606a&amp;icon_color=57606a&amp;border_color=d0d7de"></picture></themed-picture></a></td>
+    <td><a href="https://github.com/tony071204/Bank-Loan-Analysis"><themed-picture data-catalyst-inline="true"><picture><source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/df8db57449a2349959b7d785a6edaac44d6dca3dea1756ef4e45ecee2777cb44/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d746f6e79303731323034267265706f3d42616e6b2d4c6f616e2d416e616c79736973267468656d653d6461726b2662675f636f6c6f723d306431313137267469746c655f636f6c6f723d35386136666626746578745f636f6c6f723d3862393439652669636f6e5f636f6c6f723d38623934396526626f726465725f636f6c6f723d333033363364" data-canonical-src="https://github-readme-stats-fast.vercel.app/api/pin/?username=tony071204&amp;repo=Bank-Loan-Analysis&amp;theme=dark&amp;bg_color=0d1117&amp;title_color=58a6ff&amp;text_color=8b949e&amp;icon_color=8b949e&amp;border_color=30363d"><img src="https://camo.githubusercontent.com/826b44850395f4a6fd18d70bffb119ca79e88f69be2c531fd20799ff4e943c28/68747470733a2f2f6769746875622d726561646d652d73746174732d666173742e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d746f6e79303731323034267265706f3d42616e6b2d4c6f616e2d416e616c79736973267468656d653d64656661756c742662675f636f6c6f723d666666666666267469746c655f636f6c6f723d30393639646126746578745f636f6c6f723d3537363036612669636f6e5f636f6c6f723d35373630366126626f726465725f636f6c6f723d643064376465" width="400" alt="Bank-Loan-Analysis" data-canonical-src="https://github-readme-stats-fast.vercel.app/api/pin/?username=tony071204&amp;repo=Bank-Loan-Analysis&amp;theme=default&amp;bg_color=ffffff&amp;title_color=0969da&amp;text_color=57606a&amp;icon_color=57606a&amp;border_color=d0d7de"></picture></themed-picture></a></td>
+  </tr>
+</tbody></table></markdown-accessiblity-table>
+</article>
 </body>
 </html>
