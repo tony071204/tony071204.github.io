@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tony Dam | Analytics Engineer</title>
+<meta name="description" content="Tony Dam - Analytics Engineer. Data pipelines, transformation layers and self-serve dashboards.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1f2328; --muted: #57606a; --line: #d0d7de;
+    --card: #f6f8fa; --accent: #2c3a52; --link: #0969da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #8b949e; --line: #30363d;
+            --card: #161b22; --accent: #c8d0de; --link: #58a6ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  main { max-width: 860px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { text-align: center; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 2.4rem; margin: 0 0 4px; }
+  .tag { color: var(--muted); font-style: italic; margin: 0 0 16px; }
+  .links a { display: inline-block; margin: 4px; padding: 6px 14px; border: 1px solid var(--line);
+             border-radius: 999px; color: var(--fg); background: var(--card); }
+  .links a:hover { border-color: var(--link); text-decoration: none; }
+  section { margin-top: 40px; }
+  h2 { font-size: 1.3rem; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  blockquote { margin: 0; padding: 12px 16px; border-left: 4px solid var(--accent);
+               background: var(--card); border-radius: 4px; }
+  .job { display: grid; grid-template-columns: 170px 1fr; gap: 4px 16px;
+         padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .job .when { color: var(--muted); }
+  .job .desc { color: var(--muted); font-size: .92rem; }
+  @media (max-width: 600px) { .job { grid-template-columns: 1fr; } }
+  .stack { display: grid; grid-template-columns: 220px 1fr; gap: 8px 16px; }
+  .chips span { display: inline-block; margin: 2px 4px 2px 0; padding: 2px 10px; border-radius: 6px;
+                background: var(--card); border: 1px solid var(--line); font-size: .88rem; }
+  @media (max-width: 600px) { .stack { grid-template-columns: 1fr; } }
+  .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .project { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 8px;
+             background: var(--card); color: var(--fg); }
+  .project:hover { border-color: var(--link); text-decoration: none; }
+  .project small { color: var(--muted); display: block; margin-top: 4px; }
+  footer { margin-top: 48px; text-align: center; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Tony Dam</h1>
+    <p class="tag">Progressing, persistence and late nights ★</p>
+    <div class="links">
+      <a href="https://github.com/tony071204">GitHub</a>
+      <a href="https://www.linkedin.com/in/tonydam0712/">LinkedIn</a>
+      <a href="https://leetcode.com/u/Trungdd0712/">LeetCode</a>
+      <a href="mailto:tonydam.work@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>About me</h2>
+    <blockquote>"Every number I ship is a promise. If one breaks at 1am, I'm already awake."</blockquote>
+    <p>Analytics Engineer building data pipelines, transformation layers and self-serve dashboards.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="job"><div class="when">Mar 2026 – Now</div>
+      <div><a href="https://matthewsliquor.com.au"><b>Matthews Liquor Group</b></a> - Analytics Engineer
+      <div class="desc">Top 5 independent liquor retail group in Victoria</div></div></div>
+    <div class="job"><div class="when">Mar 2026 – Now</div>
+      <div><a href="https://www.i4s.au/"><b>Intelligence4Start</b></a> - Analytics Engineer
+      <div class="desc">Multicultural marketing agency</div></div></div>
+    <div class="job"><div class="when">Nov 2025 – Feb 2026</div>
+      <div><a href="https://twinglobal.com.au/"><b>TWIN Global</b></a> - Business Analyst Intern
+      <div class="desc">Healthcare and real estate software company</div></div></div>
+    <div class="job"><div class="when">Feb 2025 – Oct 2025</div>
+      <div><a href="https://www.filmviet.au/"><b>Film Viet Australia</b></a> - Data Analyst Intern
+      <div class="desc">Leading film distributor across Australia and New Zealand</div></div></div>
+    <div class="job"><div class="when">Nov 2024 – Feb 2025</div>
+      <div><b>Vin BigData (VinGroup)</b> - Machine Learning Intern
+      <div class="desc">Leading Applied AI and Big Data technology company in Vietnam</div></div></div>
+  </section>
+
+  <section>
+    <h2>Tech stack</h2>
+    <div class="stack">
+      <b>Warehouses &amp; Databases</b><div class="chips"><span>Snowflake</span><span>BigQuery</span><span>DuckDB</span><span>PostgreSQL</span><span>Supabase</span></div>
+      <b>Transformation &amp; Ingestion</b><div class="chips"><span>dbt</span><span>SQL</span><span>Python</span><span>Playwright</span><span>Selenium</span></div>
+      <b>Visualisation</b><div class="chips"><span>Plotly Dash</span><span>Vega-Lite</span><span>Power BI</span><span>Tableau</span><span>Excel</span></div>
+      <b>Modelling</b><div class="chips"><span>scikit-learn</span><span>XGBoost</span><span>ARIMA</span><span>PyTorch</span></div>
+      <b>DevOps &amp; Cloud</b><div class="chips"><span>Git</span><span>GitHub Actions</span><span>DigitalOcean</span></div>
+      <b>AI Tooling</b><div class="chips"><span>Claude Code</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <a class="project" href="https://github.com/tony071204/Skytrax-local-warehouse"><b>Skytrax-local-warehouse</b><small>Local data warehouse</small></a>
+      <a class="project" href="https://github.com/tony071204/Customer-Churn-Analysis"><b>Customer-Churn-Analysis</b><small>Churn analysis</small></a>
+      <a class="project" href="https://github.com/tony071204/Woolworth-Customer-Understanding-and-Product-analysis"><b>Woolworth Customer &amp; Product Analysis</b><small>Customer understanding</small></a>
+      <a class="project" href="https://github.com/tony071204/Bank-Loan-Analysis"><b>Bank-Loan-Analysis</b><small>Loan analysis</small></a>
+    </div>
+  </section>
+
+  <footer>&copy; Tony Dam</footer>
+</main>
+</body>
+</html>
